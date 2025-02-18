@@ -1,12 +1,15 @@
-import Header from "./pages/header";
+import Hero from "./ui/hero";
+import Navbar from "./ui/navbar";
 
 function App() {
   return (
     <>
-      <header>
-        <Header />
+      <header id="inicio" className="relative w-full">
+        <Navbar />
       </header>
-      <main></main>
+      <main>
+        <Hero />
+      </main>
       <footer></footer>
     </>
   );
