@@ -1,0 +1,32 @@
+:root {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  --clr-1: #000319;
+  --clr-2: #161A31;
+  --clr-3: #CBACF9;
+  --clr-txt: #C1C2D3;
+  --clr-title: #FFFFFF;
+
+
+  --gradient-1: background: rgb(4, 7, 29);
+  --gradient-2: linear-gradient(336deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%);
+  ;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  background: var(--clr-1);
+  position: relative;
+}
