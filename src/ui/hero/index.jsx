@@ -55,10 +55,13 @@ export default function Hero() {
         Cada projeto é único, assim como a solução que você precisa. Vamos criar
         algo incrível juntos!
       </p>
-      <button className="flex flex-col items-center justify-center transition w-50 mx-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700  hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg py-2.5 text-center my-5 ">
+      <a
+        href="#projetos"
+        className="flex flex-col items-center justify-center transition w-50 mx-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700  hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg py-2.5 text-center my-5 "
+      >
         Veja meu trabalho
         <i className="bx bx-chevrons-down text-xl"></i>
-      </button>
+      </a>
       <Watermark />
     </div>
   );
