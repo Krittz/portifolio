@@ -1,6 +1,7 @@
-import Hero from "./ui/hero";
+import Hero from "./pages/hero";
 import Navbar from "./ui/navbar";
-import Projects from "./ui/projects";
+import Projects from "./pages/projects";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </section>
         <section id="projetos">
           <Projects />
+        </section>
+        <section id="sobre">
+          <About />
         </section>
       </main>
       <footer></footer>

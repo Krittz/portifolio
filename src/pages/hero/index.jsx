@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Watermark from "../watermark";
+import Watermark from "../../ui/watermark";
 import "./style.css";
 export default function Hero() {
   const words = [
