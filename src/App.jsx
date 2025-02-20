@@ -2,6 +2,7 @@ import Hero from "./pages/hero";
 import Navbar from "./ui/navbar";
 import Projects from "./pages/projects";
 import About from "./pages/about";
+import Footer from "./ui/footer";
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
           <Projects />
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
