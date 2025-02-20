@@ -1,11 +1,11 @@
 export default function Info({ icon, title, description }) {
   return (
     <div
-      className="info flex flex-col md:flex-row gap-8 border body-border p-4 rounded-lg border-indigo-500/50 py-12 px-5
-    bg-gradient-to-bl from-indigo-900/25 to-black-700/25"
+      className="flex flex-col md:flex-row md:gap-5 border body-border p-6 rounded-lg border-indigo-500/50 py-10 md:px-5
+      bg-gradient-to-bl from-indigo-900/25 to-black-700/25 md:justify-center md:items-center"
     >
-      <div className="grid place-items-center ">
-        <img src={icon} alt="Icon" className="w=[90px]" />
+      <div className="md:flex md:justify-center md:align-center w-50 p-2">
+        <img src={icon} alt="Icon" className="w-16 h-16 object-contain" />
       </div>
       <div className="text-left flex flex-col">
         <h1 className="text-white font-bold text-2xl">{title}</h1>

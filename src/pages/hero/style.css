@@ -12,7 +12,6 @@
     width: 500px;
     height: 500px;
     background: rgba(71, 0, 119, 0.2);
-    /* background: rgba(29, 38, 125, 0.2); */
     border-radius: 50%;
     z-index: -1;
     filter: blur(100px);

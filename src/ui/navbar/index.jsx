@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 export default function Navbar() {
   const navigation = [
     { name: "Início", href: "#inicio" },
-    { name: "Projetos", href: "#projetos" },
     { name: "Sobre", href: "#sobre" },
+    { name: "Projetos", href: "#projetos" },
     { name: "Contato", href: "#contato" },
   ];
 
