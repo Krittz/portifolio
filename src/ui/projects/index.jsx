@@ -1,3 +1,4 @@
+import Card from "../card";
 import "./style.css";
 
 export default function Projects() {
@@ -48,47 +49,15 @@ export default function Projects() {
       </h1>
 
       <div className="projects-grid grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 max-w-6xl mx-auto">
-        {projects.map((item, i) => (
-          <div
-            key={i}
-            className="bg-gradient-to-tl from-[#1a1a1d] via-[#1a1a1d] to-purple-900/20 border border-gray-700 rounded-2xl p-6 shadow-lg transition hover:scale-[1.02] hover:bg-gradient-to-br hover:from-[#1a1a1d] hover:via-[#1a1a1d] hover:to-purple-900/40"
-          >
-            {item.images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt="Project"
-                className="w-full h-75 object-cover rounded-lg"
-              />
-            ))}
-
-            <div className="mt-4">
-              <h2 className="text-xl font-bold text-white">{item.title}</h2>
-              <p className="text-gray-400 mt-2 text-center">
-                {item.description}
-              </p>
-              <div className="flex items-center justify-between mt-4">
-                <div className="flex gap-2 flex-wrap">
-                  {item.tags.map((tag, index) => (
-                    <img
-                      key={index}
-                      src={tag}
-                      alt="Tech Icon"
-                      className="w-9 h-9 border border-indigo-900 rounded-full p-2"
-                    />
-                  ))}
-                </div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-400 hover:text-purple-300 text-sm font-semibold flex items-center justify-center border-purple-400 rounded-lg py-2 mt-4"
-                >
-                  Veja →
-                </a>
-              </div>
-            </div>
-          </div>
+        {projects.map((project, index) => (
+          <Card
+            key={index}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            tags={project.tags}
+            image={project.images}
+          />
         ))}
       </div>
     </div>
