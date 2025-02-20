@@ -3,7 +3,7 @@ import Navbar from "./ui/navbar";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <header id="inicio" className="relative w-full">
         <Navbar />
       </header>
@@ -11,7 +11,7 @@ function App() {
         <Hero />
       </main>
       <footer></footer>
-    </>
+    </div>
   );
 }
 

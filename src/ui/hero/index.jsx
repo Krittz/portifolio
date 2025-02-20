@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+import Watermark from "../watermark";
+import "./style.css";
 export default function Hero() {
   const words = [
     "Conecta",
@@ -39,12 +40,13 @@ export default function Hero() {
     return () => clearTimeout(timeout);
   }, [text, deleting, index]);
   return (
-    <div className="hero flex flex-col text-center">
-      <p className="hero-intro text-white/40 uppercase mt-[186px] text-sm">
+    <div className="hero flex flex-col text-center relative">
+      <p className="hero-intro text-white/40 uppercase mt-[250px] text-sm">
         Desenvolvimento de confiança, criando soluções sob medida.
       </p>
-      <h1 className="text-white/90 font-bold text-5xl w-100 md:w-[938px] self-center mt-6">
-        Transformando sua visão em tecnologia que <br />
+      <h1 className=" text-white/90 font-bold text-5xl w-100 md:w-[938px] self-center mt-6">
+        Transformando sua visão em tecnologia que{" "}
+        <br className="block md:hidden" />
         <span className="bg-gradient-to-r from-purple-800 via-purple-600 to-purple-400 inline-block text-transparent bg-clip-text">
           {text}
         </span>
@@ -53,10 +55,11 @@ export default function Hero() {
         Cada projeto é único, assim como a solução que você precisa. Vamos criar
         algo incrível juntos!
       </p>
-      <button className="flex flex-col items-center justify-center transition w-50 mx-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700  hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg py-2.5 text-center my-2 ">
+      <button className="flex flex-col items-center justify-center transition w-50 mx-auto text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700  hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg py-2.5 text-center my-5 ">
         Veja meu trabalho
         <i className="bx bx-chevrons-down text-xl"></i>
       </button>
+      <Watermark />
     </div>
   );
 }
