@@ -3,6 +3,7 @@ import Navbar from "./ui/navbar";
 import Projects from "./pages/projects";
 import About from "./pages/about";
 import Footer from "./ui/footer";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -25,6 +26,12 @@ function App() {
           className="md:h-screen md:grid md:place-items-center"
         >
           <Projects />
+        </section>
+        <section
+          id="contato"
+          className="md:h-screen md:grid md:place-items-center"
+        >
+          <Contact />
         </section>
       </main>
       <footer>
