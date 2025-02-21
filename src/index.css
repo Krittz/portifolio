@@ -2,12 +2,12 @@
 
 :root {
 
-  --clr-1: #000319;
+  --clr-1: #1A1A1D;
   --clr-2: #161A31;
   --clr-3: #CBACF9;
   --clr-txt: #C1C2D3;
   --clr-title: #FFFFFF;
-
+  color: #23011f;
 
   --gradient-1: background: rgb(4, 7, 29);
   --gradient-2: linear-gradient(336deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%);
@@ -21,8 +21,51 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #root {
   background: var(--clr-1);
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-1);
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-2);
+  border-radius: 10px;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.App::before {
+  background-image: url("assets/img/topography.svg");
+  opacity: 0.01;
+}
+
+@media screen and (max-width: 768px) {
+
+  .App::before {
+    display: none;
+
+  }
+
 }
